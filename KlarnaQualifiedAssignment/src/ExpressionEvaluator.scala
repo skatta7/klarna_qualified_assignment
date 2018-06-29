@@ -1,14 +1,14 @@
-import scala.util.Try
-
 
 object ExpressionEvaluator extends App {
 
 def calculate(nums:List[String]):Double = {
+    val first = nums.head.toDouble
+    val second = nums.tail.head.toDouble
     nums.last match {
-           case "+" => nums(0).toDouble + nums(1).toDouble
-           case "-" => nums(0).toDouble - nums(1).toDouble
-           case "*" => nums(0).toDouble * nums(1).toDouble
-           case "/" => nums(0).toDouble / nums(1).toDouble
+           case "+" => first + second
+           case "-" => first - second
+           case "*" => first * second
+           case "/" => first / second
          }
 }
 def evaluate(expr: String, acc:Double = 0): Double = {
