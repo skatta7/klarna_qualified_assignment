@@ -14,5 +14,4 @@ object MaskCreditCard extends App {
       s"$firstChar$maskedStr$last4Chars"
     }
   }
-  println(mask("1234678sdf456"))
 }

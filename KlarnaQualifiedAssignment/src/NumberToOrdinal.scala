@@ -12,5 +12,4 @@ object NumberToOrdinal extends App {
     }
   ordinalNum.toString
   }
-  println(fromNumber(87))
 }
